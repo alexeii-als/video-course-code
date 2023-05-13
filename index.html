@@ -5,115 +5,128 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/all.css">
     <title>Document</title>
 </head>
 <body>
-<header>
-    <a href="index.html">
-        <img src="img/logo.svg" alt="logo">
-        UpDate
-    </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Courses</a>
-            </li>
-            <li>
-                <a href="#">Teachers</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-        </ul>
-        <a href="#">
+<header class="container header">
+    <div class="header__box">
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg" alt="logo">
+            UpDate
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li>
+                    <a class="link" href="#">Courses</a>
+                </li>
+                <li>
+                    <a class="link" href="#">Teachers</a>
+                </li>
+                <li>
+                    <a class="link" href="#">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn-box">
+        <a class="header__link" href="#">
             En
         </a>
-        <a href="#">
+        <a class="header__link" href="#">
             Sign In
         </a>
-        <a href="#">
+        <a class="header__btn" href="#">
             Trial free
         </a>
-    </nav>
+    </div>
+
 </header>
 <main>
-    <section class="offer">
-        <h1 class="offer__title">
-            Explore thousands of hands-on creative classes.
-        </h1>
-        <p class="offer__description">
-            Start learning for <a href="#">free</a>
-        </p>
-        <button class="button">
-            Choose a cource
-        </button>
+    <section class="offer container">
+        <div class="offer__holder">
+            <h1 class="offer__title" id="heading">
+                Explore thousands of hands-on creative classes.
+            </h1>
+            <p class="offer__description">
+                Start learning for <a href="#" class="offer__link">free</a>
+            </p>
+            <button class="button">
+                Choose a cource
+            </button>
 
-        <p class="offer__sale">
-            50%
-        </p>
-        <p class="offer__time">
-            <time>
-                24 Days 17:44:16
-            </time>
-        </p>
+            <p class="offer__sale">
+                50%
+            </p>
+            <p class="offer__time">
+                <time>
+                    24 Days 17:44:16
+                </time>
+            </p>
+        </div>
         <ul class="offer__list">
-            <li>
+            <li class="offer__marketer offer__item">
                 Marketer
             </li>
-            <li>
+            <li class="offer__illustrator offer__item">
                 Illustrator
             </li>
-            <li>
+            <li class="offer__animator offer__item">
                 Animator
             </li>
-            <li>
+            <li class="offer__programmer offer__item">
                 Programmer
             </li>
-            <li>
+            <li class="offer__designer offer__item">
                 Designer
             </li>
-            <li>
+            <li class="offer__photographer offer__item">
                 Photographer
             </li>
         </ul>
     </section>
     <section class="learn">
-        <div class="learn__text">
-            <h2 class="learn__title">
-                What you will learn
-            </h2>
-            <p class="learn__description">
-                Up-to-date knowledge from recognized market experts for beginners and practitioners
-            </p>
-            <p class="learn__description">
-                On the platform, you can gain knowledge on current topics and
-                in-demand skills. All courses are aimed at practice: we monitor the relevance of the material and help with employment and internship
-            </p>
-        </div>
-        <div class="learn__counters">
-            <div class="learn__counter-item">
-                <p class="learn__counter-number">
-                    56
+        <div class="container">
+            <div class="learn__text">
+                <h2 class="learn__title">
+                    What you will learn
+                </h2>
+                <p class="learn__description">
+                    Up-to-date knowledge from recognized market experts for beginners and practitioners
                 </p>
-                <p class="learn__counter-descript">
-                    Courses
+                <p class="learn__description">
+                    On the platform, you can gain knowledge on current topics and
+                    in-demand skills. All courses are aimed at practice: we monitor the relevance of the material and help with employment and internship
                 </p>
             </div>
-            <div class="learn__counter-item">
-                <p class="learn__counter-number">
-                    108
-                </p>
-                <p class="learn__counter-descript">
-                    Curators
-                </p>
-            </div>
-            <div class="learn__counter-item">
-                <p class="learn__counter-number">
-                    3 723
-                </p>
-                <p class="learn__counter-descript">
-                    Graduates
-                </p>
+            <div class="learn__counters">
+                <div class="learn__counter-item">
+                    <p class="learn__counter-number">
+                        56
+                    </p>
+                    <p class="learn__counter-descript">
+                        Courses
+                    </p>
+                </div>
+                <div class="learn__counter-item">
+                    <p class="learn__counter-number">
+                        108
+                    </p>
+                    <p class="learn__counter-descript">
+                        Curators
+                    </p>
+                </div>
+                <div class="learn__counter-item">
+                    <p class="learn__counter-number">
+                        3 723
+                    </p>
+                    <p class="learn__counter-descript">
+                        Graduates
+                    </p>
+                </div>
             </div>
         </div>
     </section>
